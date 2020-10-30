@@ -12,7 +12,7 @@ _This project will take user inputs and respond accordingly. The project was cre
 
 ### View Online
 
-_To view my live website, {Name of Page}, visit [https://github.com/kaila-spraguemcrae/MrRobogers-Numberhood](https://github.com/kaila-spraguemcrae/MrRobogers-Numberhood)_
+_To view my live website, {Name of Page}, visit [https://kaila-spraguemcrae.github.io/MrRobogers-Numberhood/](https://kaila-spraguemcrae.github.io/MrRobogers-Numberhood/)_
 
 ### Open Locally
 
