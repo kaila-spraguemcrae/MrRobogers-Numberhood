@@ -34,9 +34,6 @@ _If you run into any problems or have any questions please contact me via [email
 ## Specs
 Describe: numberhood();
 
-Test: It will alert if the user does not input a number
-Expect: numberhood("hello").toEqual(alert("please input a number"))
-
 Test: "It will return the number inputed."
 Expect: numberhood(0).toEqual(0);
 
@@ -48,6 +45,9 @@ Expect: numberhood(2).toEqual("Boop!");
 
 Test: "It will return "Won't you be my neighbor?" if the number includes '3' is inputed."
 Expect: numberhood(3).toEqual("Won't you be my neighbor?");
+
+Test: It will alert if the user does not input a number
+Expect: numberhood("hello").toEqual(alert("please input a number"))
 
 ## Technologies Used
 
