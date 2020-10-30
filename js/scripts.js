@@ -1,22 +1,28 @@
 //bussiness logic
-// Test: It will alert if the user does not input a number
-// Expect: numberhood("hello").toEqual(alert("please input a number"))
 
+let numhoodArray = [];
 function numberhood(number){
+
   if (isNaN(number)) {
     alert("Please input a number!");
-  }
-  else if (number.toString().indexOf('3') > -1) {
-    return "Won't you be my neighbor?";
+  } else if (number.toString().indexOf('3') > -1) {
+    numhoodArray.push("Won't you be my neighbor?");
   } else if (number.toString().indexOf('2') > -1) {
-    return "Boop!";
+    numhoodArray.push("Boop!");
   } else if (number.toString().indexOf('1') > -1) {
-    return "Beep!";
+    numhoodArray.push("Beep!");
   } else {
-    return parseInt(number);
+    numhoodArray.push((number).toString());
   }
-}//function ending
-
-console.log(numberhood(43));
-
+}
+console.log(numberhood())
+;console.log(numhoodArray);
 //user interface logic
+
+$(document).ready(function(){
+  $("form#userInput").submit(function(event){
+    event.preventDefault();
+    //collect user input from #input  
+
+  });
+});
