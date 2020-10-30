@@ -31,6 +31,7 @@ $(document).ready(function(){
     event.preventDefault();
     $(".output1").show();
     $("img").show();
+    $(".output").show();
 
     let userInput = parseInt($("input#input").val());
     userInputArray.push(userInput);
