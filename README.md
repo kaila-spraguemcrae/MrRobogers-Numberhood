@@ -49,6 +49,14 @@ Expect: numberhood(3).toEqual("Won't you be my neighbor?");
 Test: It will alert if the user does not input a number
 Expect: numberhood("hello").toEqual(alert("please input a number"))
 
+Describe: outputString()
+
+Test: "It will return the outputs as a string"
+Expect: outputString(number).toEqual("Beep!, 4, Boop!")
+
+Test:
+Expect: outputString()
+
 ## Technologies Used
 
 _This project uses the following technologies:_

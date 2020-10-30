@@ -17,23 +17,25 @@ function numberhood(number){
   if (isNaN(number)) {
     alert("Please input a number!");
   } else if (number.toString().indexOf('3') > -1) {
-    return "Won't you be my neighbor?";
+      return "Won't you be my neighbor?";
   } else if (number.toString().indexOf('2') > -1) {
-    return"Boop!";
+      return"Boop!";
   } else if (number.toString().indexOf('1') > -1) {
-    numhoodArray.push("Beep!");
+      return "Beep!";
   } else {
-    return (number).toString();
+      return (number).toString();
   }
 }
 
-//function numString(number)
-// let numhoodArray = [];
+let userInputArray = [];
 
-// userInputArray.forEach(function(input){
-//   numhoodArray.push(input);
-// });
-
+function outputString(number) {
+  let numhoodArray = [];
+  userInputArray.forEach(function(number){
+    numhoodArray.push(numberhood(number));
+  });
+  return numhoodArray.join(", ");
+}
 
 //user interface logic
 
@@ -44,21 +46,11 @@ $(document).ready(function(){
     $("img").show();
 
     let userInput = parseInt($("input#input").val());
-    let userInputArray = [];
     userInputArray.push(userInput);
-
-    function string(input) {
-      let numhoodArray = [];
-      userInputArray.forEach(function(input){
-        numhoodArray.push(numberhood(input));
-      });
-      return numhoodArray.join(", ");
-    }
 
     numberhood(userInput);
 
-    $(".output2").text(string);
-    console.log(string(input));
+    $(".output2").text(outputString);
 
     $("form#userInput")[0].reset();
   });
