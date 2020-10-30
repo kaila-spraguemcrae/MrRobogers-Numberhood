@@ -16,19 +16,23 @@ function numberhood(number){
     numhoodArray.push((number).toString());
   }
 }
-numhoodArray.join(" ");
 
 //user interface logic
 
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-    //add user input from #input into an array
-    let userInput = parseInt($("input#input").val());
+    let userInput= parseInt($("input#input").val());
+    // inputArray = [];
+    // function userInput(input) {
+    //   parseInt($("input#input").val());
+    //   inputArray.push(input);
+    // }
+
     numberhood(userInput);
-    for (i=0; i < numhoodArray.length; i++) {
-      $(".output").text(numhoodArray);
-    } 
+
+    $(".output").text(numhoodArray.join(", "));
+   
     $("form#userInput")[0].reset();
   });
 });
