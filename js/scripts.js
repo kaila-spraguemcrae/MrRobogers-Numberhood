@@ -3,7 +3,6 @@
 let numhoodArray = [];
 
 function numberhood(number){
-
   if (isNaN(number)) {
     alert("Please input a number!");
   } else if (number.toString().indexOf('3') > -1) {
@@ -17,22 +16,22 @@ function numberhood(number){
   }
 }
 
+
 //user interface logic
 
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-    let userInput= parseInt($("input#input").val());
-    // inputArray = [];
-    // function userInput(input) {
-    //   parseInt($("input#input").val());
-    //   inputArray.push(input);
-    // }
+    
+    let userInputArray= [];
+    userInputArray.push(parseInt($("input#input").val()));
 
-    numberhood(userInput);
+    numberhood(userInputArray);
+    
+
 
     $(".output").text(numhoodArray.join(", "));
-   
+  
     $("form#userInput")[0].reset();
   });
 });
