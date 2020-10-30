@@ -54,8 +54,8 @@ Describe: outputString()
 Test: "It will return the outputs as a string"
 Expect: outputString(number).toEqual("Beep!, 4, Boop!")
 
-Test:
-Expect: outputString()
+Test: "It will run loop userInputArray through numhood function and push transformend elements to new array" 
+Expect: outputString(number).toEqual(array)
 
 ## Technologies Used
 
