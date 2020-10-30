@@ -22,16 +22,17 @@ function numberhood(number){
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-    
+    $(".output1").show();
+    $("img").show();
+
+
     let userInputArray= [];
     userInputArray.push(parseInt($("input#input").val()));
 
     numberhood(userInputArray);
-    
 
-
-    $(".output").text(numhoodArray.join(", "));
-  
+    $(".output2").text(numhoodArray.join(", "));
     $("form#userInput")[0].reset();
+    
   });
 });
