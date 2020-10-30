@@ -1,16 +1,17 @@
 //bussiness logic
-// Test: "It will return "Beep!" if the number '1' is inputed."
-// Expect: numberhood(1).toEqual("Beep!");
+// Test: "It will return "Boop!" if the number includes '2' is inputed."
+// Expect: numberhood(2).toEqual("Boop!");
 
 function numberhood(number){
   let numString = number.toString();
-  //Test Two
-  if (numString.indexOf('1') > -1) {
+  if (numString.indexOf('2') > -1) {
+    return "Boop!";
+  } else if (numString.indexOf('1') > -1) {
     return "Beep!";
   } else {
-   return numString;
+    return parseInt(numString);
   }
 }//function ending
 
-console.log(numberhood(413));
+console.log(numberhood(4));
 //user interface logic
