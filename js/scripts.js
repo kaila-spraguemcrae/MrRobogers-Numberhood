@@ -1,9 +1,7 @@
 //bussiness logic
 
 function numberhood(number){
-  if (isNaN(number)) {
-    alert("Please input a number!");
-  } else if (number.toString().indexOf('3') > -1) {
+  if (number.toString().indexOf('3') > -1) {
       return "Won't you be my neighbor?";
   } else if (number.toString().indexOf('2') > -1) {
       return"Boop!";
@@ -18,10 +16,16 @@ let userInputArray = [];
 
 function outputString(number) {
   let numhoodArray = [];
+
+  if (isNaN(number)) {
+    alert("Please input a number!");
+  } else {
   userInputArray.forEach(function(number){
     numhoodArray.push(numberhood(number));
   });
+  console.log(numhoodArray);
   return numhoodArray.join(", ");
+  } 
 }
 
 //user interface logic
@@ -35,8 +39,6 @@ $(document).ready(function(){
 
     let userInput = parseInt($("input#input").val());
     userInputArray.push(userInput);
-
-    numberhood(userInput);
 
     $(".output2").text(outputString);
 

@@ -25,7 +25,7 @@ _Go to my GitHub repository here, [https://github.com/kaila-spraguemcrae/MrRobog
 4. _To view the website, open index.html in Chrome or your preferred browser._
 
 ## Known Bugs
-_no known bugs at this time_
+_NaN is being pushed to the Array_
 
 ## Support and contact details
 

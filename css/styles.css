@@ -11,7 +11,7 @@ body {
 .jumbotron {
   margin-top: 20px;
   background-image: url(../images/robot.jpg);
-  height: 400px;
+  height: 350px;
   border: solid black;
 }
 .jumbotron h1 {
@@ -24,7 +24,15 @@ body {
 .output1 {
   display: none;
   margin-top: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: larger;
 }
+
+.output2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: larger;
+}
+
 .output {
   display: none;
   margin-top: 10px;
