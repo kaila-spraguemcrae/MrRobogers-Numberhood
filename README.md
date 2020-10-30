@@ -34,16 +34,19 @@ _If you run into any problems or have any questions please contact me via [email
 ## Specs
 Describe: numberhood();
 
+Test: It will alert if the user does not input a number
+Expect: numberhood("hello").toEqual(alert("please input a number"))
+
 Test: "It will return the number inputed."
 Expect: numberhood(0).toEqual(0);
 
-Test: "It will return "Beep!" if the number '1' is inputed."
+Test: "It will return "Beep!" if the number includes '1' is inputed."
 Expect: numberhood(1).toEqual("Beep!");
 
-Test: "It will return "Boop!" if the number '2' is inputed."
+Test: "It will return "Boop!" if the number includes '2' is inputed."
 Expect: numberhood(2).toEqual("Boop!");
 
-Test: "It will return "Won't you be my neighbor?" if the number '3' is inputed."
+Test: "It will return "Won't you be my neighbor?" if the number includes '3' is inputed."
 Expect: numberhood(3).toEqual("Won't you be my neighbor?");
 
 ## Technologies Used

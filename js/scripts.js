@@ -1,10 +1,12 @@
 //bussiness logic
-// Test: "It will return "Boop!" if the number includes '2' is inputed."
-// Expect: numberhood(2).toEqual("Boop!");
+// Test: "It will return "Won't you be my neighbor?" if the number includes '3' is inputed."
+// Expect: numberhood(3).toEqual("Won't you be my neighbor?");
 
 function numberhood(number){
   let numString = number.toString();
-  if (numString.indexOf('2') > -1) {
+  if (numString.indexOf('3') > -1) {
+    return "Won't you be my neighbor?";
+  } else if (numString.indexOf('2') > -1) {
     return "Boop!";
   } else if (numString.indexOf('1') > -1) {
     return "Beep!";
@@ -13,5 +15,5 @@ function numberhood(number){
   }
 }//function ending
 
-console.log(numberhood(4));
+console.log(numberhood("hello"));
 //user interface logic
