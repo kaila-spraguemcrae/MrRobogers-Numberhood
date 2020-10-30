@@ -1,20 +1,38 @@
 //bussiness logic
 
-let numhoodArray = [];
-
+// function numberhood(number){
+//   if (isNaN(number)) {
+//     alert("Please input a number!");
+//   } else if (number.toString().indexOf('3') > -1) {
+//     numhoodArray.push("Won't you be my neighbor?");
+//   } else if (number.toString().indexOf('2') > -1) {
+//     numhoodArray.push("Boop!");
+//   } else if (number.toString().indexOf('1') > -1) {
+//     numhoodArray.push("Beep!");
+//   } else {
+//     numhoodArray.push((number).toString());
+//   }
+// }
 function numberhood(number){
   if (isNaN(number)) {
     alert("Please input a number!");
   } else if (number.toString().indexOf('3') > -1) {
-    numhoodArray.push("Won't you be my neighbor?");
+    return "Won't you be my neighbor?";
   } else if (number.toString().indexOf('2') > -1) {
-    numhoodArray.push("Boop!");
+    return"Boop!";
   } else if (number.toString().indexOf('1') > -1) {
     numhoodArray.push("Beep!");
   } else {
-    numhoodArray.push((number).toString());
+    return (number).toString();
   }
 }
+
+//function numString(number)
+// let numhoodArray = [];
+
+// userInputArray.forEach(function(input){
+//   numhoodArray.push(input);
+// });
 
 
 //user interface logic
@@ -25,14 +43,23 @@ $(document).ready(function(){
     $(".output1").show();
     $("img").show();
 
+    let userInput = parseInt($("input#input").val());
+    let userInputArray = [];
+    userInputArray.push(userInput);
 
-    let userInputArray= [];
-    userInputArray.push(parseInt($("input#input").val()));
+    function string(input) {
+      let numhoodArray = [];
+      userInputArray.forEach(function(input){
+        numhoodArray.push(numberhood(input));
+      });
+      return numhoodArray.join(", ");
+    }
 
-    numberhood(userInputArray);
+    numberhood(userInput);
 
-    $(".output2").text(numhoodArray.join(", "));
+    $(".output2").text(string);
+    console.log(string(input));
+
     $("form#userInput")[0].reset();
-    
   });
 });
