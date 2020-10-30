@@ -1,6 +1,7 @@
 //bussiness logic
 
 let numhoodArray = [];
+
 function numberhood(number){
 
   if (isNaN(number)) {
@@ -15,14 +16,19 @@ function numberhood(number){
     numhoodArray.push((number).toString());
   }
 }
-console.log(numberhood())
-;console.log(numhoodArray);
+numhoodArray.join(" ");
+
 //user interface logic
 
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-    //collect user input from #input  
-
+    //add user input from #input into an array
+    let userInput = parseInt($("input#input").val());
+    numberhood(userInput);
+    for (i=0; i < numhoodArray.length; i++) {
+      $(".output").text(numhoodArray);
+    } 
+    $("form#userInput")[0].reset();
   });
 });
