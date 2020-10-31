@@ -1,33 +1,20 @@
 // //bussiness logic
 
-// // function numberhood(number){
-// //   if (number.toString().indexOf('3') > -1) {
-// //       return "Won't you be my neighbor?";
-// //   } else if (number.toString().indexOf('2') > -1) {
-// //       return"Boop!";
-// //   } else if (number.toString().indexOf('1') > -1) {
-// //       return "Beep!";
-// //   } else {
-// //       return (number).toString();
-// //   }
-// // }
-
-Test: "It will replace numbers containing a '1' with 'Beep!'."
-Expect: roboTalk(1).toEqual(["0", "Beep!"]);
-
 function roboTalk(number){
   let array=[];
   for (i=0; i<=number; i++) {
     array.push(i);
   }
   for ( i= 0; i < array.length; i++) {
-    if ((array[i] + "").includes("1")){
-      array[i] = "Beep!";
+    if ((array[i] + "").includes("2")) {
+      array[i] = "Boop!"
+    } else if ((array[i] + "").includes("1")) {
+        array[i] = "Beep!";
     } 
-    }
- return array;
-}
-console.log(roboTalk(1));
+  }
+  return array;
+  }
+console.log(roboTalk(12));
 
 // // let userInputArray = [];
 

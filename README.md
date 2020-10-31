@@ -48,14 +48,7 @@ Expect: roboTalk(3).toEqual(["0","Beep!","Boop!","Won't you be my neighbor?"])
 
 
 
-<!-- Test: "It will return "Boop!" if the number includes '2' is inputed."
-Expect: numberhood(2).toEqual("Boop!");
-
-Test: "It will return "Won't you be my neighbor?" if the number includes '3' is inputed."
-Expect: numberhood(3).toEqual("Won't you be my neighbor?");
-
-Test: It will alert if the user does not input a number
-Expect: numberhood("hello").toEqual(alert("please input a number"))
+<!-- 
 
 Describe: outputString()
 
