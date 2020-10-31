@@ -19,38 +19,21 @@ function roboTalk(number){
   }
   return array;
   }
-console.log(roboTalk(14));
 
-// // let userInputArray = [];
+//user interface logic
 
-// // function outputString(number) {
-// //   let numhoodArray = [];
+$(document).ready(function(){
+  $("form#userInput").submit(function(event){
+    event.preventDefault();
 
-// //   if (isNaN(number)) {
-// //     alert("Please input a number!");
-// //   } else {
-// //   userInputArray.forEach(function(number){
-// //     numhoodArray.push(numberhood(number));
-// //   });
-// //   console.log(numhoodArray);
-// //   return numhoodArray.join(", ");
-// //   } 
-// // }
+    $(".output1").show();
+    $("img").show();
+    $(".output").show();
 
-// // //user interface logic
+    let userInput = parseInt($("input#input").val());
 
-// // $(document).ready(function(){
-// //   $("form#userInput").submit(function(event){
-// //     event.preventDefault();
-// //     $(".output1").show();
-// //     $("img").show();
-// //     $(".output").show();
+    $(".output2").text(roboTalk(userInput));
 
-// //     let userInput = parseInt($("input#input").val());
-// //     userInputArray.push(userInput);
-
-// //     $(".output2").text(outputString);
-
-// //     $("form#userInput")[0].reset();
-// //   });
-// // });
+    $("form#userInput")[0].reset();
+  });
+});
