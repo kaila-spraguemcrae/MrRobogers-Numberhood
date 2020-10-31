@@ -34,8 +34,8 @@ _If you run into any problems or have any questions please contact me via [email
 ## Specs
 Describe: numberhood();
 
-Test: "It will return the number inputed."
-Expect: numberhood(0).toEqual(0);
+Test: "It will return a range of numbers to the user inputted number."
+Expect: numberhood(4).toEqual(["0","1","2","3","4"]);
 
 Test: "It will return "Beep!" if the number includes '1' is inputed."
 Expect: numberhood(1).toEqual("Beep!");
