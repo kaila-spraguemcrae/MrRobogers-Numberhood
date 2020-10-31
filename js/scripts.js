@@ -1,4 +1,4 @@
-//bussiness logic
+// //bussiness logic
 
 // // function numberhood(number){
 // //   if (number.toString().indexOf('3') > -1) {
@@ -12,15 +12,22 @@
 // //   }
 // // }
 
+Test: "It will replace numbers containing a '1' with 'Beep!'."
+Expect: roboTalk(1).toEqual(["0", "Beep!"]);
 
-function numberhood(number){
+function roboTalk(number){
   let array=[];
   for (i=0; i<=number; i++) {
     array.push(i);
   }
-  return array;
+  for ( i= 0; i < array.length; i++) {
+    if ((array[i] + "").includes("1")){
+      array[i] = "Beep!";
+    } 
+    }
+ return array;
 }
-console.log(numberhood(10));
+console.log(roboTalk(1));
 
 // // let userInputArray = [];
 

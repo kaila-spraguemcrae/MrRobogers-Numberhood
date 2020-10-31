@@ -32,15 +32,23 @@ _NaN is being pushed to the Array"_
 _If you run into any problems or have any questions please contact me via [email](mailto:kaila.sprague@icloud.com)._
 
 ## Specs
-Describe: numberhood();
+Describe: roboTalk();
 
-Test: "It will return a range of numbers to the user inputted number."
-Expect: numberhood(4).toEqual(["0","1","2","3","4"]);
+Test: "It will return a range of numbers starting from '0' to the user inputed number."
+Expect: roboTalk(4).toEqual(["0", "1", "2", "3", "4"]);
 
-Test: "It will return "Beep!" if the number includes '1' is inputed."
-Expect: numberhood(1).toEqual("Beep!");
+Test: "It will replace numbers containing a '1' with 'Beep!'."
+Expect: roboTalk(1).toEqual(["0", "Beep!"]);
 
-Test: "It will return "Boop!" if the number includes '2' is inputed."
+Test: "It will replace numbers containing a '2' with 'Boop!'."
+Expect: roboTalk(2).toEqual(["0", "Beep!", "Boop!"])
+
+Test: "It will replace numbers containing a '3' with 'Won't you be my neighbor?'."
+Expect: roboTalk(3).toEqual(["0","Beep!","Boop!","Won't you be my neighbor?"])
+
+
+
+<!-- Test: "It will return "Boop!" if the number includes '2' is inputed."
 Expect: numberhood(2).toEqual("Boop!");
 
 Test: "It will return "Won't you be my neighbor?" if the number includes '3' is inputed."
@@ -55,7 +63,7 @@ Test: "It will return the outputs as a string"
 Expect: outputString(number).toEqual("Beep!, 4, Boop!")
 
 Test: "It will run loop userInputArray through numhood function and push transformend elements to new array" 
-Expect: outputString(number).toEqual(array)
+Expect: outputString(number).toEqual(array) -->
 
 ## Technologies Used
 
