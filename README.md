@@ -12,7 +12,7 @@ _This project will take user inputs and respond accordingly. The project was cre
 
 ### View Online
 
-_To view my live website, {Name of Page}, visit [https://kaila-spraguemcrae.github.io/MrRobogers-Numberhood/](https://kaila-spraguemcrae.github.io/MrRobogers-Numberhood/)_
+_To view my live website, Mr. Roboger's Numberhood, visit [https://kaila-spraguemcrae.github.io/MrRobogers-Numberhood/](https://kaila-spraguemcrae.github.io/MrRobogers-Numberhood/)_
 
 ### Open Locally
 
@@ -25,7 +25,7 @@ _Go to my GitHub repository here, [https://github.com/kaila-spraguemcrae/MrRobog
 4. _To view the website, open index.html in Chrome or your preferred browser._
 
 ## Known Bugs
-_NaN is being pushed to the Array"_
+**Fixed bug (10.30.2020):** _NaN is being pushed to the Array_
 
 ## Support and contact details
 
@@ -45,17 +45,6 @@ Expect: roboTalk(2).toEqual(["0", "Beep!", "Boop!"])
 
 Test: "It will replace numbers containing a '3' with 'Won't you be my neighbor?'."
 Expect: roboTalk(3).toEqual(["0","Beep!","Boop!","Won't you be my neighbor?"])
-
-
-<!-- 
-
-Describe: outputString()
-
-Test: "It will return the outputs as a string"
-Expect: outputString(number).toEqual("Beep!, 4, Boop!")
-
-Test: "It will run loop userInputArray through numhood function and push transformend elements to new array" 
-Expect: outputString(number).toEqual(array) -->
 
 ## Technologies Used
 
