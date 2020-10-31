@@ -10,8 +10,8 @@ function roboTalk(number){
       array[i] = "Boop!"
     } else if ((array[i] + "").includes("1")) {
         array[i] = "Beep!";
-    } return array;
-  }
+    } 
+  } return array;
 }
 
 $(document).ready(function(){
