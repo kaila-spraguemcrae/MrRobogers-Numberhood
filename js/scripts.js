@@ -1,7 +1,7 @@
 function roboTalk(number){
   let array=[];
   for (i=0; i<=number; i++) {
-      array.push(i);
+    array.push(i);
   }
   for (i= 0; i < array.length; i++) {
     if ((array[i] + "").includes("3")) {
@@ -9,7 +9,7 @@ function roboTalk(number){
     } else if ((array[i] + "").includes("2")) {
       array[i] = "Boop!"
     } else if ((array[i] + "").includes("1")) {
-        array[i] = "Beep!";
+      array[i] = "Beep!";
     } 
   } return array;
 }
@@ -18,7 +18,6 @@ $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
 
-    $(".output1").show();
     $("img").show();
     $(".output").show();
 
